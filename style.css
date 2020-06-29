@@ -23,13 +23,10 @@ html {
 }
 
 body {
-	width: 1170px;
+	max-width: 1170px;
 	height: 100%;
 	background: #fff;
-	font-family: 'GothaPro', sans-serif;
-	font-style: normal;
-	font-size: 12px;
-	line-height: 11px;
+	font: 12px/11px 'GothaPro';
 	color: #000;
 }
 
@@ -72,7 +69,7 @@ body {
 }
 
 .site-navigation_item {
-	margin-right: 35px;
+	margin-left: 35px;
 }
 
 .site-navigation_item:firt-child {
@@ -86,17 +83,14 @@ body {
 }
 
 .user-navigation_item {
-	margin-right: 35px;
+	margin-left: 35px;
 }
 
-.user-navigation_item:last-child {
-	margin-right: 0;
-}
 
 .link-item {
 	text-decoration: none;
 	color: #000;
-	font-family: 'GothaPro', sans-serif;
+	font-family: 'GothaPro';
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -110,177 +104,5 @@ body {
 	background-image: url(pic/rob-potter-422534-unsplash.png);
 	color: #fff;
 	text-transform: uppercase;
-}
-
-
-.promo__title {
-	font-size: 30px;
-	line-height: 29px;
-	margin: 90.87px 775.42px 0 59.58px;
-}
-
-.promo__link {
-	color: #fff;
-	text-decoration: none;
-	font-size: 12px;
-	line-height: 11px;
-	margin: 14.97px 849.31px 75.23px 59.58px;
-}
-
-.promo__link img {
-	height: 10px;
-	margin-left: 6.29px;
-}
-
-.banner__wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #000;
-}
-
-.banner__img-column {
-	margin-top: 75px;
-	margin-bottom: 74px;
-	margin-left: 41px;
-}
-
-.banner__text-column {
-	margin: 155px 45px 152.87px 50px;
-	width: 266px;
-	height: 186.13px;
-	color: #fff;
-}
-
-.banner__title {
-	font-family: 'GothaPro', sans-serif;
-	font-weight: 700;
-	font-size: 22px;
-	line-height: 27px;
-	text-transform: uppercase;
-}
-
-.banner__text {
-	font-family: 'GothaPro', sans-serif;
-	font-size: 14px;
-	line-height: 17px;
-}
-
-.learn-more-button {
-	color: #fff;
-	font-size: 12px;
-	line-height: 11px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-.learn-more-button img {
-	margin-left: 8.91px;
-	height: 12px;
-}
-
-
-.main-footer {
-	background: #000;
-	height: 296.33px;
-}
-
-.main-footer__wrapper {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-}
-
-.main-footer__column {
-	color: #fff;
-	font-size: 12px;
-	line-height: 11px;
-}
-
-.main-footer__section-title {
-	font-family: 'GothaPro';
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 11px;
-	margin-top: 69.48px;
-	margin-bottom: 0;
-}
-
-.main-footer__section-text {
-	margin-top: 6px;
-}
-
-.account-list {
-	width: 86px;
-	height: 84px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-top: 10px;
-}
-
-.customer-list {
-	width: 128px;
-	height: 102px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-top: 10px;
-}
-
-.miscellaneous-list {
-	width: 116px;
-	height: 102px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-top: 10px;
-}
-
-.main-footer__link {
-	color: #fff;
-	font-family: 'GothaPro';
-	text-decoration: none;
-	font-size: 12px;
-	line-height: 11px;
-	margin-bottom: 6px;
-}
-
-.main-footer__section-icon {
-	display: flex;
-	justify-content: space-between;
-	width: 137px;
-	height: 18.86px;
-	margin-top: 36.29px;
-}
-
-.main-footer__section-icon img {
-	margin-right: 25px;
-}
-
-.main-footer__section-button {
-	width: 136.57px;
-	height: 29.7px;
-	margin-top: 11px;
-	border-radius: 0;
-	background: #000;
-	border: 1.5px solid #fff;
-	color: #fff;
-	font-family: 'GothaPro';
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 10px;
-	line-height: 10px;
-}
-
-.main-footer__end {
-	display: flex;
-	justify-content: center;
-	color: #fff;
-	font-size: 11px;
-	font-family: 'GothaPro';
-	margin-top: 57.84px;
-	margin-bottom: 33.01px;
-	align-items: center;
 }
 
