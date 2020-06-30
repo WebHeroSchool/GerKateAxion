@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Axion</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=devise-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header class="main-header">
@@ -15,33 +15,31 @@
 						<img src="pic/Axion-logo-1.png" width="55px" height="55px" alt="Axion logo">
 					</a>
 					<ul class="site-navigation">
-						<li class="site-navigation_item">
-							<a href="#!" class="link-item">Shop</a>
+						<li class="site-navigation__item"><a href="#!" class="link-item">Shop</a>
 						</li>
-						<li class="site-navigation_item">
-							<a href="#!" class="link-item">News</a>
+						<li class="site-navigation__item"><a href="#!" class="link-item">News</a>
 						</li>
-						<li class="site-navigation_item">
-							<a href="#!" class="link-item">Team</a>
+						<li class="site-navigation__item"><a href="#!" class="link-item">Team</a>
 						</li>
-						<li class="site-navigation_item">
-							<a href="#!" class="link-item">Legacy</a>
+						<li class="site-navigation__item"><a href="#!" class="link-item">Legacy</a>
 						</li>
-						<li class="site-navigation_item">
-							<a href="#!" class="link-item">Help</a>
+						<li class="site-navigation__item"><a href="#!" class="link-item">Help</a>
 						</li>
 					</ul>
 					<ul class="user-navigation">
 						<li class="user-navigation_item">
-							<a href="#!" class="link-item"><img src="pic/Vector-2.png" width="177.93px" height="0" alt="line"><img src="pic/Vector-3.png" width="13.52px" height="14px" alt="serch"></a>
+							<form action="" method="post"class="form-search">
+								<input type="search" placeholder="search" class="input">
+								<input type="submit" name="" class="submit">
+							</form>
 						</li>
-						<li class="user-navigation_item">
+						<li class="user-navigation__item">
 							<a href="#!" class="link-item">Sing in</a>
 						</li>
-						<li class="user-navigation_item">
+						<li class="user-navigation__item">
 							<a href="#!" class="link-item">Cart<img src="pic/Group 2.png" width="14.92px" height="14.92px" alt="one"></a>
 						</li>
-						<li class="user-navigation_item">
+						<li class="user-navigation__item">
 							<a href="#!" class="link-item"><img src="pic/united-states.png" width="20px" height="20px" alt="flag"></a>
 						</li>
 					</ul>
@@ -72,7 +70,7 @@
 							Atlas Black/Rasta Axion
 						</h3>
 						<p class="catalog-price">
-							$89.00<img src="pic/Ellipse-4.png" width="7px" height="7px" alt="Elipse grey"><img src="pic/Ellipse-3.png" width="9px" height="9px" alt="Elipse black"><img src="pic/Ellipse-5.png" width="7px" height="7px" alt="Elipse red"><img src="pic/Ellipse — копия.png" width="7px" height="7px" alt="Elipse yellow">
+							$89.00<span class="grey"></span><span class="black"></span><span class="red"></span><span class="yellow"></span>
 						</p>
 					</li>
 					<li class="catalog-item">
@@ -81,7 +79,7 @@
 							Camel/Chili Pepper Axion
 						</h3>
 						<p class="catalog-price">
-							$74.00<img src="pic/Ellipse-4.png" width="7px" height="7px" alt="Elipse grey"><img src="pic/Ellipse-8.png" width="9px" height="9px" alt="Elipse beige"><img src="pic/Ellipse-5.png" width="7px" height="7px" alt="Elipse red"><img src="pic/Ellipse — копия.png" width="7px" height="7px" alt="Elipse yellow">
+							$74.00<span class="grey"></span><span class="beige"></span><span class="red"></span><span class="yellow"></span>
 						</p>
 					</li>
 					<li class="catalog-item">
@@ -90,7 +88,7 @@
 							Mandel Smoke/Rust Axion
 						</h3>
 						<p class="catalog-price">
-							$69.00<img src="pic/Ellipse-4.png" width="7px" height="7px" alt="Elipse grey"><img src="pic/Ellipse-5.png" width="9px" height="9px" alt="Elipse red"><img src="pic/Ellipse-7.png" width="7px" height="7px" alt="Elipse purple"><img src="pic/Ellipse — копия.png" width="7px" height="7px" alt="Elipse yellow">
+							$69.00<span class="grey"></span><span class="burgundy"></span><span class="purple"></span><span class="yellow"></span>
 						</p>
 					</li>
 					<li class="catalog-item">
@@ -99,7 +97,7 @@
 							Cloud/Electric Blue Axion
 						</h3>
 						<p class="catalog-price">
-							$69.00<img src="pic/Ellipse-4.png" width="7px" height="7px" alt="Elipse grey"><img src="pic/Ellipse-6.png" width="9px" height="9px" alt="Elipse blue"><img src="pic/Ellipse-5.png" width="7px" height="7px" alt="Elipse red"><img src="pic/Ellipse — копия.png" width="7px" height="7px" alt="Elipse yellow">
+							$69.00<span class="grey"></span><span class="blue"></span><span class="red"></span><span class="yellow"></span>
 						</p>
 					</li>
 				</ul>
@@ -127,6 +125,9 @@
 			<div class="container">
 				<div class="news__wrapper">
 					<div class="news__text-column">
+						<h2 class="news__general-title">
+							Recent stories
+						</h2>
 						<img src="pic/Rectangle 3.7.png" width="307px" height="147.24px" alt="Presents Justin Anagoa">
 						<h3 class="news__title">
 							Presents Justin Anagoa
@@ -159,13 +160,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="photo-gelery">
+		<section class="photo-gallery">
 			<div class="container">
-				<div class="photo-gelery__wrapper">
-					<h3 class="photo-gelery__title">
+				<div class="photo-gallery__wrapper">
+					<h3 class="photo-gallery__title">
 						#AXIONfootwear
 					</h3>
-					<p class="photo-gelery__pic">
+					<p class="photo-gallery__pic">
 						<img src="pic/Rectangle 3.png" width="147.14px" height="147.14px" alt="pic 1"><img src="pic/Rectangle 3.1.png" width="147.14px" height="147.14px" alt="pic 2"><img src="pic/Rectangle 3.2.png" width="147.14px" height="147.14px" alt="pic 3"><img src="pic/Rectangle 3.3.png" width="147.14px" height="147.14px" alt="pic 4"><img src="pic/Rectangle 3.4.png" width="147.14px" height="147.14px" alt="pic 5"><img src="pic/Rectangle 3.5.png" width="147.14px" height="147.14px" alt="pic 6"><img src="pic/Rectangle 3.6.png" width="147.14px" height="147.14px" alt="pic 7">
 					</p>
 				</div>
@@ -177,7 +178,7 @@
 			<div class="main-footer__wrapper">
 				<section class="main-footer__column">
 					<h4 class="main-footer__section-title">
-						MY ACCOUNT
+						My account
 					</h4>
 					<ul class="account-list">
 						<li><a class="main-footer__link" href="#">Login</a></li>
@@ -189,7 +190,7 @@
 				</section>
 				<section class="main-footer__column">
 					<h4 class="main-footer__section-title">
-						CUSTOMER SERVICE
+						Customer service
 					</h4>
 					<ul class="customer-list">
 						<li><a class="main-footer__link" href="#">Contact us</a></li>
@@ -202,7 +203,7 @@
 				</section>
 				<section class="main-footer__column">
 					<h4 class="main-footer__section-title">
-						MISCELLANEOUS
+						Miscellaneous
 					</h4>
 					<ul class="miscellaneous-list">
 						<li><a class="main-footer__link" href="#">About Us</a></li>
@@ -215,7 +216,7 @@
 				</section>
 				<section class="main-footer__column">
 					<h4 class="main-footer__section-title">
-						NEWSLETTER SIGN UP
+						Newsletter sing up
 					</h4>
 					<p class="main-footer__section-text">
 						Get 10% Off Your Next Order!
@@ -223,12 +224,14 @@
 					<button class="main-footer__section-button">
 						sing up
 					</button>
-					<a href="#" class="main-footer__section-icon">
-						<img src="pic/Vector-2 — копия.png" width="8px" height="16px" alt="facebook"><img src="pic/Vector-3 — копия.png" width="18px" height="14.62px" alt="twitter"><img src="pic/Vector-4.png" width="18px" height="18px" alt="instagram"><img src="pic/XMLID 799.png" width="14.15px" height="18px" alt="pinterest">
+					<a href="#" class="main-footer__section-icon"><img src="pic/Vector-2 — копия.png" width="8px" height="16px" alt="facebook"></a>
+					<a href="#" class="main-footer__section-icon"><img src="pic/Vector-3 — копия.png" width="18px" height="14.62px" alt="twitter"></a>
+					<a href="#" class="main-footer__section-icon"><img src="pic/Vector-4.png" width="18px" height="18px" alt="instagram"></a>
+					<a href="#" class="main-footer__section-icon"><img src="pic/XMLID 799.png" width="14.15px" height="18px" alt="pinterest">
 					</a>
 				</section>
 			</div>
-			<div class="main-footer__end">© 2019 Axion. All rights reserved.</div>
+			<div class="main-footer__end">© 2019 Axion. All rights reserved.</div><a href="#" class="main-footer__logo"><img src="pic/разработано в.png" width="93.13px" height="37.77px" alt="school logo"></a>
 		</div>
 	</footer>
 </body>
