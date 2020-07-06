@@ -81,6 +81,10 @@ body {
 	margin-right: 0;
 }
 
+.cart-img {
+	padding-left: 3.95px;
+}
+
 .form-search {
 	width: 177.93px;
 	height: 19.02px;
@@ -110,16 +114,16 @@ body {
 }
 .submit {
 	position: absolute;
-	background-image: url(img/лупа.svg);
+	background-image: url(img/lens.svg);
 }
 .promo__wrapper {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	width: 1030px;
 	height: 280px;
-	background-image: url(img/фон сек1.svg);
+	background-image: url(img/rob-potter-422534-unsplash.jpg);
 }
 
 .promo__title {
@@ -128,10 +132,14 @@ body {
 	font: 30px/29px 'GothaPro';
 	font-weight: 700;
 	text-transform: uppercase;
+	color: #fff;
+	padding-left: 59.58px;
+	margin-bottom: 14.97px;
 }
 
 .promo__link {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: ;
+	color: #fff;
+	padding-left: 59.58px;
 }
