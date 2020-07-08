@@ -65,11 +65,17 @@ body {
 	font-weight: 700;
 }
 
+.link-item:hover {
+	color: #b48484;
+	opacity: .8;
+}
+
 .user-navigation {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	text-align: justify;
+	margin-left: auto;
 }
 
 .user-navigation .link-item {
@@ -83,6 +89,7 @@ body {
 
 .cart-img {
 	padding-left: 3.95px;
+	margin-bottom: -4px
 }
 
 .form-search {
@@ -142,4 +149,9 @@ body {
 	text-decoration: none;
 	color: #fff;
 	padding-left: 59.58px;
+}
+
+.promo__link:hover {
+	color: #b48484;
+	opacity: .8;
 }
