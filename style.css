@@ -7,8 +7,7 @@ html {
 }
 
 body {
-	max-width: 1280px;
-	height: 100%;
+	min-height: 100vh;
 	background: #fff;
 	font: 12px/11px 'GothaPro';
 	color: #000;
@@ -17,8 +16,6 @@ body {
 .container {
 	width: 1030px;
 	margin: 0 auto;
-	padding-left: 0;
-	padding-right: 0;
 }
 
 .site-navigation,
@@ -35,11 +32,12 @@ body {
 
 .main-header__nav-wrapper {
 	display: flex;
-	justify-content: flex-start;
+	padding-top: 33px;
+	padding-bottom: 28px;
 }
 
 .main-header__logo {
-	padding: 32.46px 45px 28.5px 0;
+	margin-right: 45px;
 }
 
 .site-navigation {
@@ -54,9 +52,6 @@ body {
 	text-transform: uppercase;
 }
 
-.site-navigation__item:last-child {
-	margin-right: 191.55px;
-}
 
 .link-item {
 	text-decoration: none;
@@ -87,37 +82,44 @@ body {
 	margin-right: 0;
 }
 
+.link-item_img {
+	position: relative;
+	padding-right: 19px;
+}
+
 .cart-img {
-	padding-left: 3.95px;
-	margin-bottom: -4px
+	position: absolute;
+	top: -4px;
+	right: 2px;
 }
 
 .form-search {
-	width: 177.93px;
-	height: 19.02px;
+	width: 178px;
+	height: 19px;
 	margin-right: 35px;
 }
 
 .form-search .input {
-	width: 164.41px;
-	height: 19.02px;
-	padding: 0 13.52px 1px 5px;
+	width: 164px;
+	height: 19px;
+	padding: 0 13px 1px 5px;
 	outline: none;
 }
 
 .form-search .submit {
-	width: 13.52px;
+	width: 13px;
 	height: 14px;
-	margin-bottom: 5.02px;
+	margin-bottom: 5px;
 	cursor: pointer;
-	margin-left: -13.52px;
+	margin-left: -13px;
 	border: none;
+	background-color: transparent;
 }
 
 .input {
 	position: relative;
 	border: none;
-	border-bottom: 1.5px solid #000;
+	border-bottom: 1px solid #000;
 }
 .submit {
 	position: absolute;
@@ -130,25 +132,28 @@ body {
 	align-items: flex-start;
 	width: 1030px;
 	height: 280px;
+	padding-left: 59px;
 	background-image: url(img/rob-potter-422534-unsplash.jpg);
 }
 
 .promo__title {
 	width: 195px;
-	height: 86.94px;
+	height: 87px;
 	font: 30px/29px 'GothaPro';
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #fff;
-	padding-left: 59.58px;
-	margin-bottom: 14.97px;
+	margin-bottom: 15px;
 }
 
 .promo__link {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #fff;
-	padding-left: 59.58px;
+}
+
+.promo__link span {
+	margin-right: 5px;
 }
 
 .promo__link:hover {
