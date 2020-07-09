@@ -26,8 +26,8 @@ body {
 .miscellaneous-list,
 .main-footer__social {
 	list-style: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .main-header__nav-wrapper {
@@ -133,7 +133,7 @@ body {
 	width: 1030px;
 	height: 280px;
 	padding-left: 59px;
-	background-image: url(img/rob-potter-422534-unsplash.jpg);
+	background-image: url(img/background.jpg);
 }
 
 .promo__title {
