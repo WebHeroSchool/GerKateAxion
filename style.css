@@ -53,6 +53,10 @@ body {
 	text-transform: uppercase;
 }
 
+ .site-navigation__item:last-child {
+ 	margin-right: 0;
+ }
+
 
 .link-item {
 	text-decoration: none;
