@@ -11,6 +11,7 @@ body {
 	background: #fff;
 	font: 12px/11px 'GothaPro';
 	color: #000;
+	margin: 0;
 }
 
 .container {
@@ -79,7 +80,7 @@ body {
 }
 
 .user-navigation .link-item:last-child {
-	margin-right: 0;
+	margin-right: 0
 }
 
 .link-item_img {
@@ -137,6 +138,7 @@ body {
 }
 
 .promo__title {
+	margin-top: 0;
 	width: 195px;
 	height: 87px;
 	font: 30px/29px 'GothaPro';
