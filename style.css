@@ -6,7 +6,7 @@ html {
 	box-sizing: inherit;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 	.container {
 		width: 930px;
 		margin: 0 auto;
