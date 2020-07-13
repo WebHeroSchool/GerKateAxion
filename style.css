@@ -20,6 +20,20 @@ html {
 	.bestsellers {
 		margin-bottom: 52px;
 	}
+
+	.banner {
+		width: 930px;
+		height: 442px;
+	}
+
+	.banner__text-column {
+		width: 258px;
+		height: 168px;
+	}
+
+	.banner__text {
+		font: 13/16 'GothaPro'
+	}
 }
 	
 
@@ -228,13 +242,12 @@ body {
 	position: relative;
 	font: 14px/13px 'GothaPro';
 	font-weight: 700;
-	padding-right: 66px;
 }
 
 .grey {
 	position: absolute;
 	background-color: #C4C4C4;
-	border-radius: 50%
+	border-radius: 50%;
 	width: 7px;
 	height: 7px;
 	left: 71%;
