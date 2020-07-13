@@ -6,6 +6,23 @@ html {
 	box-sizing: inherit;
 }
 
+@media (min-width: 1024px) {
+	.container {
+		width: 930px;
+		margin: 0 auto;
+	}
+
+	.promo {
+		height: 253px;
+		margin-bottom: 54px;
+	}
+
+	.bestsellers {
+		margin-bottom: 52px;
+	}
+}
+	
+
 body {
 	min-height: 100vh;
 	background: #fff;
@@ -35,6 +52,14 @@ body {
 	display: flex;
 	padding-top: 33px;
 	padding-bottom: 28px;
+}
+
+.main-header__burger {
+	display: none;
+}
+
+.adapted-logo {
+	display: none;
 }
 
 .main-header__logo {
@@ -294,4 +319,61 @@ body {
 .catalog-title:hover {
 	color: #b48484;
 	cursor: pointer;
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	background-color: #000;
+	width: 1030px;
+	height: 494px;
+}
+
+.banner__img-column {
+	display: flex;
+	margin-right: 48px;
+}
+
+.banner__img-column img {
+	margin-left: 39px;
+}
+
+.banner__img-column img:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.banner__text-column {
+	display: flex;
+	flex-direction: column;
+	width: 266px;
+	height: 186px;
+}
+.banner__title {
+	color: #fff;
+	font: 22px/27px 'GothaPro';
+	font-weight: 700;
+	margin-top: 0;
+	text-transform: uppercase;	
+}
+.banner__text {
+	font: 14px/17px 'GothaPro';
+	color: #fff;
+	text-align: justify;
+}
+
+.learn-more-button {
+	font: 12px/11px 'GothaPro';
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.learn-more-button span {
+	margin-right: 9px;
+}
+
+.learn-more-button:hover {
+	color: #b48484;
+	opacity: .8;
 }
