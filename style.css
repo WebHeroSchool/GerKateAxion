@@ -172,6 +172,7 @@ body {
 .bestsellers {
 	width: 1030px;
 	height: 261px;
+	margin-bottom: 26px;
 }
 
 .bestsellers__title {
