@@ -138,6 +138,7 @@ body {
 	width: 1030px;
 	height: 280px;
 	padding-left: 59px;
+	margin-bottom: 54px;
 	background-image: url(img/background.jpg);
 }
 
@@ -166,4 +167,130 @@ body {
 .promo__link:hover {
 	color: #b48484;
 	opacity: .8;
+}
+
+.bestsellers {
+	width: 1030px;
+	height: 261px;
+}
+
+.bestsellers__title {
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+	font: 22px/21px 'GothaPro';
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.catalog-list {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 37px;
+}
+
+.catalog-list:last-child {
+	margin-right: 0;
+}
+
+.catalog-item 
+.catalog-title {
+	font: 12px/11px 'GothaPro';
+}
+.catalog-price {
+	position: relative;
+	font: 14px/13px 'GothaPro';
+	font-weight: 700;
+	padding-right: 66px;
+}
+
+.grey {
+	position: absolute;
+	background-color: #C4C4C4;
+	border-radius: 50%
+	width: 7px;
+	height: 7px;
+	left: 71%;
+	top: 3px;
+}
+
+.black {
+	position: absolute;
+	background-color: #0E1211;
+	border-radius: 50%;
+	left: 77%;
+	top: 2px;
+	width: 9px;
+	height: 9px;
+}
+
+.red {
+	position: absolute;
+	background-color: #B62E3C;
+	border-radius: 50%;
+	left: 84%;
+	width: 7px;
+	height: 7px;
+	top: 3px;
+}
+
+.yellow {
+	position: absolute;
+	background-color: #FDB431;
+	border-radius: 50%;
+	left: 90%;
+	width: 7px;
+	height: 7px;
+	top: 3px;
+}
+
+.burgundy {
+	position: absolute;
+	background-color: #762E31;
+	border-radius: 50%;
+	width: 9px;
+	height: 9px;
+	left: 77%;
+	top: 2px;
+}
+
+.beige {
+	position: absolute;
+	background-color: #E29D69;
+	border-radius: 50%;
+	width: 9px;
+	height: 9px;
+	left: 77%;
+	top: 2px;
+}
+
+.purple {
+	position: absolute;
+	background-color: #41479B;
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+	left: 84%;
+	top: 3px;
+}
+
+.blue {
+	position: absolute;
+	background-color: #257DA9;
+	border-radius: 50%;
+	width: 9px;
+	height: 9px;
+	left: 77%;
+	top: 2px;
+}
+
+.catalog-price span:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.catalog-title:hover {
+	color: #b48484;
+	cursor: pointer;
 }
