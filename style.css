@@ -40,7 +40,9 @@ html {
 body {
 	min-height: 100vh;
 	background: #fff;
-	font: 12px/11px 'GothaPro';
+	font-size: 12px;
+	line-height: 11px;
+	font-family: 'GothaPro';
 	color: #000;
 	margin: 0;
 }
@@ -185,7 +187,8 @@ body {
 	margin-top: 0;
 	width: 195px;
 	height: 87px;
-	font: 30px/29px 'GothaPro';
+	font-size: 30px;
+	line-height: 29px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #fff;
@@ -195,7 +198,8 @@ body {
 .promo__link {
 	text-transform: uppercase;
 	text-decoration: none;
-	font: 12px/11px 'GothaPro';
+	font-size: 12px;
+	line-height: 11px;
 	color: #fff;
 }
 
@@ -218,7 +222,8 @@ body {
 	display: flex;
 	justify-content: center;
 	margin-top: 0;
-	font: 22px/21px 'GothaPro';
+	font-size: 22px;
+	line-height: 21px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 15px;
@@ -226,6 +231,7 @@ body {
 
 .catalog-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-right: 37px;
 }
@@ -234,30 +240,43 @@ body {
 	margin-right: 0;
 }
 
-.catalog-item 
+.catalog-item__link {
+	color: #000;
+	text-decoration: none;
+}
+
+.catalog-item__link:hover {
+	opacity: .8;
+}
+
 .catalog-title {
-	font: 12px/11px 'GothaPro';
+	margin-top: 0;
+	font-size: 12px;
+	line-height: 11px;
 }
 .catalog-price {
+	margin-top: 0;
 	position: relative;
-	font: 14px/13px 'GothaPro';
+	font-size: 14px;
+	line-height: 13px;
 	font-weight: 700;
 }
 
-.grey {
+.circle {
 	position: absolute;
-	background-color: #C4C4C4;
 	border-radius: 50%;
 	width: 7px;
 	height: 7px;
-	left: 71%;
 	top: 3px;
 }
 
+.grey {
+	background-color: #C4C4C4;
+	left: 71%;
+}
+
 .black {
-	position: absolute;
 	background-color: #0E1211;
-	border-radius: 50%;
 	left: 77%;
 	top: 2px;
 	width: 9px;
@@ -265,29 +284,17 @@ body {
 }
 
 .red {
-	position: absolute;
 	background-color: #B62E3C;
-	border-radius: 50%;
 	left: 84%;
-	width: 7px;
-	height: 7px;
-	top: 3px;
 }
 
 .yellow {
-	position: absolute;
 	background-color: #FDB431;
-	border-radius: 50%;
 	left: 90%;
-	width: 7px;
-	height: 7px;
-	top: 3px;
 }
 
 .burgundy {
-	position: absolute;
 	background-color: #762E31;
-	border-radius: 50%;
 	width: 9px;
 	height: 9px;
 	left: 77%;
@@ -295,9 +302,7 @@ body {
 }
 
 .beige {
-	position: absolute;
 	background-color: #E29D69;
-	border-radius: 50%;
 	width: 9px;
 	height: 9px;
 	left: 77%;
@@ -305,66 +310,57 @@ body {
 }
 
 .purple {
-	position: absolute;
 	background-color: #41479B;
-	border-radius: 50%;
-	width: 7px;
-	height: 7px;
 	left: 84%;
-	top: 3px;
 }
 
 .blue {
-	position: absolute;
 	background-color: #257DA9;
-	border-radius: 50%;
 	width: 9px;
 	height: 9px;
 	left: 77%;
 	top: 2px;
 }
 
-.catalog-price span:hover {
-	opacity: .5;
-	cursor: pointer;
-}
-
-.catalog-title:hover {
-	color: #b48484;
-	cursor: pointer;
-}
 
 .banner {
 	display: flex;
 	align-items: center;
 	background-color: #000;
 	width: 1030px;
-	height: 494px;
+	margin-bottom: 80px;
 }
 
 .banner__img-column {
 	display: flex;
-	margin-right: 48px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 75px 50px 74px 41px;
 }
 
-.banner__img-column img {
-	margin-left: 39px;
-}
-
-.banner__img-column img:hover {
-	opacity: .5;
+.img-column_btn {
+	position: absolute;
+	border-radius: 50%;
+	border: none;
+	background: transparent;
 	cursor: pointer;
+}
+
+.img-column_btn:hover {
+	opacity: .7;
 }
 
 .banner__text-column {
 	display: flex;
 	flex-direction: column;
-	width: 266px;
-	height: 186px;
+	margin-right: 45px;
 }
+
 .banner__title {
 	color: #fff;
-	font: 22px/27px 'GothaPro';
+	font-size: 22px;
+	line-height: 27px;
 	font-weight: 700;
 	margin-top: 0;
 	text-transform: uppercase;	
@@ -390,3 +386,169 @@ body {
 	color: #b48484;
 	opacity: .8;
 }
+
+.news {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 79px;
+}
+.news__general-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 40px;
+	font-size: 22px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.news__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.news__text-column {
+	width: 307px;
+}
+
+.news__img {
+	margin-bottom: 29px;
+}
+
+.news__title {
+	font-size: 18px;
+	line-height: 17px;
+	margin-bottom: 0;
+}
+.news__text {
+	font-size: 14px;
+	line-height: 17px;
+}
+.button_news {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.button_news span {
+	margin-right: 7px;
+}
+
+.button_news img {
+	margin-right: 120px;
+}
+
+.button_news:hover {
+	color: #b48484;
+	opacity: .8;
+}
+
+.photo-gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.photo-gallery__title {
+	display: flex;
+	justify-content: flex-end;
+	text-transform: uppercase;
+	opacity: .3;
+	font-size: 18px;
+	line-height: 17px;
+	margin-bottom: 8px;
+}
+
+.photo-gallery__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+.photo-gallery__pic img {
+	width: calc(100% / 7);
+}
+
+.main-footer {
+	background: #000;
+	padding-top: 69px;
+}
+
+.main-footer__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-footer__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: justify;
+	margin-bottom: 58px;
+}
+
+.main-footer__wrap {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+
+.main-footer__column {
+}
+
+.main-footer__section-title {
+	margin-top: 0;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.main-footer__link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.customer-list li {
+	margin-bottom: 6px;
+}
+
+.miscellaneous-list li {
+	margin-bottom: 6px;
+}
+
+.account-list li {
+	margin-bottom: 6px;
+}
+
+.main-footer__section-text {
+	margin-top: 0;
+	color: #fff;
+}
+
+.main-footer__section-button {
+	background: transparent;
+	color: #fff;
+	font-size: 10px;
+	line-height: 10px;
+	width: 137px;
+	height: 30px;
+	text-transform: uppercase;
+	border: 1.5px solid #fff;
+	margin-bottom: 34px;
+}
+
+.main-footer__social {
+	display: flex;
+	justify-content: space-between;
+	width: 137px;
+	margin-right: 0;
+}
+.main-footer__social-icon
+.main-footer__end 
+
+.main-footer__logo {
+	order: 1;
+	align-self: flex-end;
+}
+
