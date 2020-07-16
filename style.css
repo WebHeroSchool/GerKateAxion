@@ -545,7 +545,9 @@ body {
 	margin-right: 0;
 }
 .main-footer__social-icon
-.main-footer__end 
+.main-footer__end {
+	order: 2;
+}
 
 .main-footer__logo {
 	order: 1;
