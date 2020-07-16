@@ -32,7 +32,7 @@ html {
 	}
 
 	.banner__text {
-		font: 13/16 'GothaPro'
+		font: 13px/16px 'GothaPro'
 	}
 }
 	
@@ -491,8 +491,15 @@ body {
 
 .main-footer__wrap {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
 	color: #fff;
+	margin-bottom: 33px;
+}
+
+.main-footer__wrap:before {
+	content: '';
+	width: 100px;
 }
 
 .main-footer__column {
@@ -545,12 +552,8 @@ body {
 	margin-right: 0;
 }
 .main-footer__social-icon
-.main-footer__end {
-	order: 2;
-}
+.main-footer__end 
 
-.main-footer__logo {
-	order: 1;
-	align-self: flex-end;
-}
+
+.main-footer__logo 
 
