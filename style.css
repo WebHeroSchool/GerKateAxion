@@ -219,8 +219,6 @@ body {
 }
 
 .bestsellers {
-	width: 1030px;
-	height: 261px;
 	margin-bottom: 26px;
 }
 
@@ -238,13 +236,9 @@ body {
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-right: 37px;
+	justify-content: flex-start;	
 }
 
-.catalog-list:last-child {
-	margin-right: 0;
-}
 
 .catalog-item__link {
 	color: #000;
@@ -252,14 +246,23 @@ body {
 	position: relative;
 }
 
-.catalog-item__link:after {
+.catalog-item {
+	width: 229px;
+	margin-right: 37px;
+}
+
+.catalog-item:last-child {
+	margin-right: 0;
+}
+
+.catalog-item:after {
 	position: absolute;
 	content: '';
 	height: 100px;
 	border: 1px solid #000;
 	opacity: .2;
-	left: -48px;
-	bottom: 32px;
+	left: 249px;
+	bottom: -50px;
 }
 
 .catalog-item__link:hover {
@@ -287,55 +290,55 @@ body {
 	top: 3px;
 }
 
-.grey {
+.circle_grey {
 	background-color: #C4C4C4;
 	left: 71%;
 }
 
-.black {
+.circle_black {
 	background-color: #0E1211;
-	left: 77%;
+	left: 75%;
 	top: 2px;
 	width: 9px;
 	height: 9px;
 }
 
-.red {
+.circle_red {
 	background-color: #B62E3C;
+	left: 80%;
+}
+
+.circle_yellow {
+	background-color: #FDB431;
 	left: 84%;
 }
 
-.yellow {
-	background-color: #FDB431;
-	left: 90%;
-}
-
-.burgundy {
+.circle_burgundy {
 	background-color: #762E31;
 	width: 9px;
 	height: 9px;
-	left: 77%;
+	left: 75%;
 	top: 2px;
 }
 
-.beige {
+.circle_beige {
 	background-color: #E29D69;
 	width: 9px;
 	height: 9px;
-	left: 77%;
+	left: 75%;
 	top: 2px;
 }
 
-.purple {
+.circle_purple {
 	background-color: #41479B;
-	left: 84%;
+	left: 80%;
 }
 
-.blue {
+.circle_blue {
 	background-color: #257DA9;
 	width: 9px;
 	height: 9px;
-	left: 77%;
+	left: 75%;
 	top: 2px;
 }
 
@@ -437,11 +440,12 @@ body {
 .news__title {
 	font-size: 18px;
 	line-height: 17px;
-	margin-bottom: 0;
+	margin-top: 0;
 }
 .news__text {
 	font-size: 14px;
 	line-height: 17px;
+	margin-top: 0;
 }
 .button_news {
 	color: #000;
