@@ -5,27 +5,6 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-
-@media (max-width: 1024px) {
-	.container {
-		max-width: 930px;
-		margin: 0 auto;
-	}
-}
-
-@media (max-width: 768px) {
-	.container {
-		max-width: 681px;
-		margin: 0 auto;
-	}
-}
-
-@media (max-width: 375px) {
-	.container {
-		max-width: 276px;
-		margin: 0 auto;
-	}
-}
 	
 body {
 	min-height: 100vh;
@@ -337,9 +316,11 @@ body {
 
 .banner {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	background-color: #000;
 	max-width: 1030px;
+	padding: 75px 45px 74px 41px;
 	margin-bottom: 80px;
 }
 
@@ -347,8 +328,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 50px;
 	position: relative;
-	margin: 75px 50px 74px 41px;
 }
 
 .img-column_btn {
@@ -366,7 +347,6 @@ body {
 .banner__text-column {
 	display: flex;
 	flex-direction: column;
-	margin-right: 45px;
 }
 
 .banner__title {
@@ -375,8 +355,10 @@ body {
 	line-height: 27px;
 	font-weight: 700;
 	margin-top: 0;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	text-align: justify;
 }
+
 .banner__text {
 	font: 14px/17px 'GothaPro';
 	color: #fff;
@@ -586,6 +568,63 @@ body {
 	opacity: .3;
 }
 
+@media (max-width: 1024px) {
+	.container {
+		max-width: 930px;
+		margin: 0 auto;
+	}
+
+	.promo {
+		height: 253px;
+		margin-bottom: 67px;
+	}
+
+	.bestsellers {
+		margin-bottom: 52px;
+	}
+
+	.banner {
+		margin-bottom: 95px;
+	}
+
+	.banner__img {
+		max-width: 563px;
+		max-height: 309px;
+	}
+
+	.banner__text {
+		font-size: 13px;
+		line-height: 16px;
+	}
+
+	.news {
+		margin-bottom: 90px;
+	}
+
+	.news__text-column img {
+		max-width: 277px;
+	}
+
+	.news__text {
+		max-width: 277px
+		font-size: 13px;
+		line-height: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 681px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 375px) {
+	.container {
+		max-width: 276px;
+		margin: 0 auto;
+	}
+}
 
 
 
