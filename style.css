@@ -803,6 +803,7 @@ body {
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
+		background-color: transparent;
 	}
 
 	.banner__img-column {
